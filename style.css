@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body, html {
+  font: 14px/18px "Muli", sans-serif;
+  height: 100%;
+  font-weight: 300;
+  background-color: #988863; }
+
+#scoreboard {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+  #game div {
+    margin: 3px;
+    padding: 3px; }
+  #game #display {
+    display: flex;
+    justify-content: space-around; }
+    #game #display .l {
+      border: solid 1px #aaa;
+      border-radius: 3px;
+      width: 25px;
+      height: 27px;
+      text-align: center;
+      background-color: #ccc;
+      color: #222;
+      font-weight: 400;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px 0; }
+    #game #display .lost {
+      background-color: #C28080;
+      color: #fff; }
+    #game #display .won {
+      background-color: #80C283;
+      color: #fff; }
+
+.holder {
+  height: 30px; }
+  .holder #available {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    font-size: 10px;
+    justify-content: center;
+    line-height: 5px; }
+    .holder #available .header {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: 400; }
+    .holder #available .available {
+      color: #3F2C01; }
+    .holder #available .used {
+      color: #ada081; }
+    .holder #available .found {
+      color: #CCFFD7; }
+  .holder #hints {
+    font-size: 10px;
+    margin-top: 40px; }
+    .holder #hints #gethint {
+      border-radius: 3px;
+      border: solid 1px #333;
+      background-color: #988863;
+      margin: 3px;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+      padding: 3px 6px;
+      box-shadow: inset rgba(255, 255, 255, 0.5) 0 1px 1px;
+      -webkit-user-select: none; }
+      .holder #hints #gethint:hover {
+        box-shadow: inset #fff 0 1px 2px; }
+      .holder #hints #gethint:active {
+        box-shadow: inset rgba(0, 0, 0, 0.5) 0 1px 1px; }
+  .holder #info {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 8px; }
+  .holder #startgamemarquee {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 8px;
+    width: 50px;
+    -webkit-user-select: none; }
+    .holder #startgamemarquee:before {
+      content: " ";
+      width: 45px;
+      height: 15px;
+      z-index: 10;
+      position: absolute;
+      background: #988863;
+      background: -moz-linear-gradient(left, #988863 0%, rgba(152, 136, 99, 0) 25%, rgba(152, 136, 99, 0) 52%, rgba(152, 136, 99, 0) 75%, #988863 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #988863), color-stop(25%, rgba(152, 136, 99, 0)), color-stop(52%, rgba(152, 136, 99, 0)), color-stop(75%, rgba(152, 136, 99, 0)), color-stop(100%, #988863));
+      background: -webkit-linear-gradient(left, #988863 0%, rgba(152, 136, 99, 0) 25%, rgba(152, 136, 99, 0) 52%, rgba(152, 136, 99, 0) 75%, #988863 100%);
+      background: -o-linear-gradient(left, #988863 0%, rgba(152, 136, 99, 0) 25%, rgba(152, 136, 99, 0) 52%, rgba(152, 136, 99, 0) 75%, #988863 100%);
+      background: -ms-linear-gradient(left, #988863 0%, rgba(152, 136, 99, 0) 25%, rgba(152, 136, 99, 0) 52%, rgba(152, 136, 99, 0) 75%, #988863 100%);
+      background: linear-gradient(to right, #988863 0%, rgba(152, 136, 99, 0) 25%, rgba(152, 136, 99, 0) 52%, rgba(152, 136, 99, 0) 75%, #988863 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#988863', endColorstr='#988863', GradientType=1 ); }
